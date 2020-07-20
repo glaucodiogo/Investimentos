@@ -48,6 +48,17 @@ CREATE TABLE `FundosImobiliarios`
 PRIMARY KEY (`Id`)
 );
 
+
+-- ************************************** `TipoMovimentacoes`
+
+CREATE TABLE `TipoMovimentacoes`
+(
+ `Id`   int NOT NULL ,
+ `Tipo` varchar(45) NOT NULL ,
+
+PRIMARY KEY (`Id`)
+);
+
 -- ************************************** `Movimentacoes`
 
 CREATE TABLE `Movimentacoes`
@@ -119,12 +130,4 @@ CREATE TABLE `TesourosDiretos`
 PRIMARY KEY (`Id`)
 );
 
--- ************************************** `TipoMovimentacoes`
 
-CREATE TABLE `TipoMovimentacoes`
-(
- `Id`   int NOT NULL ,
- `Tipo` varchar(45) NOT NULL ,
-
-PRIMARY KEY (`Id`)
-);
